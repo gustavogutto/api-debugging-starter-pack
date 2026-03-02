@@ -1,1 +1,16 @@
+# API Debugging Runbook (Beginner)
+
+## 1) What to collect before you troubleshoot
+When a user reports an API problem, I collect:
+- What they were trying to do (goal)
+- Endpoint (URL), HTTP method (GET/POST/etc.)
+- Timestamp (and timezone)
+- Status code (e.g., 404, 401, 500)
+- Request headers (especially Authorization)
+- Request body (if any)
+- Response body (error message)
+- Any request id / trace id (if the API provides it)
+
+## 2) A simple mental model (picture)
+User → sends request → API → returns response
 
